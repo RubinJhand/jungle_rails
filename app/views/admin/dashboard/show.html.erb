@@ -1,2 +1,24 @@
 <h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+<h1>Store Status</h1>
+
+<div class="order-summary jumbotron">
+  <table class="table table-bordered">
+    <tr>
+      <th scope="col" class="text-center">
+        <%= link_to 'Product Count', controller: 'admin/products' %>
+      </th>
+      <th scope="col" class="text-center">
+        <%= link_to 'Category Count', controller: 'admin/products' %>
+      </th>
+  </tr>
+    <thead>
+      
+    </thead>
+    <tbody>
+    <tr>
+      <td class="text-center"><%= @product_count %></td>
+      <td class="text-center"><%= @category_count %></td>
+    </tr>
+  </tbody>
+  </table>
+</div> 
