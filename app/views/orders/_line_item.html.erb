@@ -1,0 +1,26 @@
+<tr>
+  <td>
+    <%= image_tag product.image.tiny %>
+  </td>
+  <td>
+    <h4><%= product.name %></h4>
+    <br>
+    <p><%= product.description %></p>
+  </td>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Quantity</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <td> 
+        <%= quantity %>
+      </td>
+      <td>
+        <%= humanized_money_with_symbol product.price %>
+      </td>
+    </tbody>
+  </table>
+</tr>
