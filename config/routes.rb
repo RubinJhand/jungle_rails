@@ -19,26 +19,17 @@ Rails.application.routes.draw do
     resources :products, except: [:edit, :update, :show]
     resources :categories, only: [:index, :new, :create]
   end
-  
-  get '/login' => 'sessions#new'
-  post '/login' => 'sessions#create'
-  get '/logout' => 'sessions#destroy'
 
-  get '/signup' => 'users#new'
-  post '/users' => 'users#create'
+  resource :users, path: '/', only: [] do
+    get :new, path: 'signup'
+    post :create, path: 'users'
+  end
 
-  # scope(path_names: { new: 'signup', create: 'users' }) do
-  #   resource :users, path: '/', only: [:new, :create]
-  # end
-
-  # scope(path_names: { new: 'login' }) do
-  #   resource :sessions, path: '/', only: [:new, :create, :destroy] do
-
-  #     post '/login' => 'sessions#create'
-  #     get '/logout' => 'sessions#destroy' 
-
-  #   end
-  # end
+  resource :sessions, path: '/', only: [] do
+    get :new, path: 'login'
+    post :create, path: 'login'
+    get :destroy, path: 'logout'
+  end
 
   # Singular 'resource' because no :index
   resource :about, only: [:show] do 
