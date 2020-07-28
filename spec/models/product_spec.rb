@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe Product, type: :model do
-  
   category = Category.new(name: "Apparel")
   subject { described_class.new(name: "Jasper's Peppermint Candy", price: 199, quantity: 5, category: category)}
 
