@@ -4,25 +4,25 @@ A mini e-commerce application built with Rails 4.2 for purposes of teaching Rail
 
 ## Final Product
 
-- Home page
+* Home page
   !["Home page"](https://github.com/RubinJhand/jungle_rails/blob/master/docs/home_page.png)
 
-- Signed in: Active Sale
+* Signed in: Active Sale
   !["Signed in: Active Sale"](https://github.com/RubinJhand/jungle_rails/blob/master/docs/signed_in_with_active_sale.png)
 
-- Empty Cart Message
+* Empty Cart Message
   !["Empty Cart Message"](https://github.com/RubinJhand/jungle_rails/blob/master/docs/empty_cart.png)
 
-- Product Detail
+* Product Detail
   !["Product Detail"](https://github.com/RubinJhand/jungle_rails/blob/master/docs/individual_item.png)
 
-- Order Details/Cart View
+* Order Details/Cart View
   !["Order Details"](https://github.com/RubinJhand/jungle_rails/blob/master/docs/cart_view.png)
 
-- Order Complete
+* Order Complete
   !["Order Complete"](https://github.com/RubinJhand/jungle_rails/blob/master/docs/completed_order.png)
 
-- Admin Options: Categories
+* Admin Options: Categories
   !["Admin Options: Categories"](https://github.com/RubinJhand/jungle_rails/blob/master/docs/admin_categories.png)
 
 ## Setup
