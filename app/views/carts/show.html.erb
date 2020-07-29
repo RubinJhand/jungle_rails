@@ -31,6 +31,7 @@
           </th>
         </tr>
       </tfoot>
+
     </table>
   </div>
 
@@ -48,10 +49,13 @@
           data-currency="cad">
         </script>
       <% end %>
+
     </div>
   </div>
 
-<% else %>
-<%= link_to 'Cart appears to be empty.  To continue shopping, click here', '/', class: 'alert alert-danger' %>
-<% end %>
+  <% else %>
+  <%= link_to 'Cart appears to be empty.  To continue shopping, click here', '/', class: 'alert alert-danger' %>
+  
+  <% end %>
+
 </section>
