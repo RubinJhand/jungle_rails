@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature "Visitor click one of the product partials and get to new page", type: :feature, js: true do
+RSpec.feature "Visitor clicks one of the product partials and goes to new page", type: :feature, js: true do
 
     # SETUP
     before :each do

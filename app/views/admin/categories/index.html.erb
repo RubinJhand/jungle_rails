@@ -13,13 +13,15 @@
     <table class="table table-bordered">
       <thead>
         <tr>
-          <th class="text-center">Categories</th>
+          <th colspan="1">Category</th>
+          <th>Qty Individual Products</th>
+          <th>Product Names</th>
         </tr>
       </thead>
       <tbody>
-        <% @categories.each do |item| %>
-          <%= render 'category', category: item[:name] %>
-        <% end %>
+      <tbody>
+        <%= render @categories %>
+      </tbody>
       </tbody>
     </table>
 
